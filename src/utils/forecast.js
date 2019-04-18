@@ -13,10 +13,8 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             callback(undefined,
                 body.daily.data[0].summary + " It is currently " + body.currently.temperature +
-                " degree F out. There is " + body.currently.precipProbability + "% chance of rain"
-
-            )
-
+                " degree fahrenheit out. There is " + body.currently.precipProbability + "% chance of rain. Highest temperature is "+body.daily.data[0].temperatureHigh+
+                ". Lowest temperature is "+body.daily.data[0].temperatureLow);
         }
 
     });
