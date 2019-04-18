@@ -1,0 +1,56 @@
+body{
+    color:#333333;
+    font-family: Arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+/* for sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1
+}
+
+footer{
+    color: #888888;
+    border-top: 1px solid #666666;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header{
+    margin-bottom: 16px;
+    margin-top: 48px;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.portrait{
+    width: 250px;
+}
+
+header a {
+    color: brown;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+input {
+    border: 1px solid #666666;
+    padding: 8px;
+}
+
+button{
+    border: 1px solid #666666;
+    cursor: pointer;
+    color: white;
+    background: #888888;
+    padding: 8px;
+
+}
