@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit',(e)=>{
     msg2.textContent = ''
     e.preventDefault();//to prevent default behavior of form i.e refreshing on submit
     const location = search.value;    
-    fetch('http://localhost:3000/weather?address='+encodeURIComponent(location)).then((response)=>{
+    fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{
         response.json().then((data)=>{
          if(data.error){
             msg1.textContent = data.error;

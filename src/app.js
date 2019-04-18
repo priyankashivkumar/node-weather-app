@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const app = express();
+//port should be defined after defining app
+const port = process.env.PORT || 3000 // if PORT is not defined then use 3000
 //  console.log(__dirname);
 //  console.log(__filename);
 // define paths for express config
@@ -100,6 +102,6 @@ app.get('*',(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is up in the port 3000');
 });
